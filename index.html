@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News</title>
+ 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+
+
+</head>
+
+
+
+<body>
+  
+
+<!--------the large menu----------->
+<header>
+<div class="website-header">
+  <div class="ui segment medium stackable menu " id="large-menu" >
+
+<div class="ui container">
+  <div class="left menu">
+    <div class="logo"><span class="item"> NEWS </span></div>
+
+  </div>
+
+  <div class="right menu">
+    <div class="item"> <a href="">Subscribe</a></div>
+    <div class="item"> <a href="">  Today </a> </div>
+    <div class="item">
+      <div class="ui action input">
+        <input type="text" placeholder="Search...">
+        <button class="ui button "> Search </button>
+
+        <div class="item"><a href="#">
+          <div class="ui dropdown">
+              <div class="text">country</div>
+              <i class="dropdown icon"></i>
+              <div class="menu black">
+                   <div class="item"><i class="sa flag"></i>Saudi Arabia</div>
+                  <div class="item"><i class="america flag"></i>America</div>
+                  <div class="item"><i class="france flag"></i>France</div>
+                  <div class="item"><i class="japan flag"></i>Japan</div>
+                 
+              </div>
+          </div>
+      </a></div>
+        
+      </div>
+    </div>
+      
+  </div>
+
+</div>
+
+  </div>
+</div>
+</header>
+
+
+
+
+<!------------ navbar --------------->
+
+  <div class="ui container" id="navbar">
+
+  <div class="btn-box">
+
+    <button> <a href="#">All</a></button>
+    <button > <a href="#"> General </a> </button>
+    <button > <a href="#">Business</a> </button>
+    <button > <a href="#">Technology </a> </button>
+    <button > <a href="#">Entertainment</a> </button>
+    <button > <a href="#">Health </a> </button>
+    <button > <a href="#">Science </a> </button>
+
+  </div>
+  
+  </div>
+  
+
+
+
+<!------------landing start ----------->
+
+<div class="carousel-contianer">
+   <div class="slider">
+     <div class="slides">
+       <input type="radio" name="radio-btn" id="radio1"> 
+       <input type="radio" name="radio-btn" id="radio2"> 
+       <input type="radio" name="radio-btn" id="radio3"> 
+        
+
+<div class="slide first">
+  <img src="img/carousel1.jpg" >
+</div>
+
+<div class="slide ">
+  <img src="img/carousel2.jpg">
+</div>
+
+<div class="slide ">
+  <img src="img/carousel3.jpg" >
+</div>
+
+
+<div class="navigation-auto">
+  <div class="auto-btn1"></div>
+  <div class="auto-btn2"></div>
+  <div class="auto-btn3"></div>
+ 
+</div>
+
+     </div>
+     <div class="navigation-manual">
+       <label for="radio1" class="manual-btn"></label>
+       <label for="radio2" class="manual-btn"></label>
+       <label for="radio3" class="manual-btn"></label>
+       
+     </div>
+   </div>  
+   
+  </div>
+
+
+<!-------------newsapi---------------->
+
+
+<!--<div class="newsapi">
+<form  class="search">
+  <label>News</label><br>
+  <input class="input" type="text" /><br>
+  <input type="submit"/>
+</form>
+<div class="news-container">
+  <ul class="class-list">
+    
+  </ul>
+</div>
+</div>-->
+
+
+
+<!-----------weatherapi----------------->
+<div class="weatherapi">
+<div class="weather-container">
+  <header><i class="bx bx-left-arrow-alt"></i>The Weather </header>
+  <section class="input-part">
+    <p class="info-txt">Please enter a valid city name </p>
+    <input type="text" placeholder="Enter city name " spellcheck="false" required>
+    <div class="separator"></div>
+    <button>Get Device Location </button>
+  </section>
+  <section class="weather-part">
+    <img src="img/Weather Icons/cloud.svg" alt="">
+    <div class="temp">
+      <span class="numb">13</span>
+    <span class="deg">°</span>C
+    </div>
+    <div class="weather">Broken Clouds</div>
+    <div class="location">
+      <i class="bx bx-map"></i>
+      <span>riyadh,Saudi Arabia</span>
+    </div>
+    <div class="bottom-details">
+      <div class="column1 feels">
+        <i class="bx bxs-thermometer"></i>
+        <div class="details">
+          <div class="temp">
+            <span class="numb-2">17</span>
+          <span class="deg">°</span>C
+          </div>
+          <p>Feels Like</p>
+        </div>
+      </div>
+      <div class="column humidity">
+        <i class="bx bxs-droplet-half"></i>
+        <div class="details">
+            <span>84%</span>
+          <p>Humidity</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<!---------------footer---------------->
+
+
+<footer>
+<div class="ui grid ">
+  <div class="three column row">
+  <div class="column apps"><h3> Download Our App  </h3>
+    <p> Download App for Android and 
+        ios mobile phone. </p>
+        <div class="app-logo">
+        <img src="img/play-store.png" >
+        <img src="img/app-store.png" >
+    </div></div>
+
+  <div class="column footer-logo"><div><span> NEWS </span></div></div>
+  
+  <div class="column follow"><h3> Follow us:</h3>
+    <ul>
+        <li>Facebook </li>
+        <li>Twitter </li>
+        <li> Instagram</li>
+        <li>YouTube </li>
+       
+
+    </ul>
+   </div>
+  
+</div>
+</div>
+
+</footer>
+
+
+  
+
+
+ 
+
+
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>
