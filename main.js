@@ -126,3 +126,61 @@ container.querySelector(".humidity span").innerText = `${humidity}%`;
 
  }
 }
+
+
+
+
+
+
+
+/// news api 
+
+let card= document.querySelector("#article");
+let select = document.querySelector("#country");
+let country = 'sa';
+
+select.addEventListener('change',function(){
+    card.innerHTML='';
+    getData(select.options[select.selectedIndex].value);
+})
+
+
+document.addEventListener('DOMContentLoaded',getData(country));
+
+
+function getData(country){
+   const url =`http://newsapi.org/v2/top-headlines?country=${country}&apiKey=88bfe20ea65541509a69777b7983c151`; 
+const req = new Request (url);
+let results;
+let articles;
+fetch(req)
+.then( function(response){
+    results= response.json();
+    results.then(result=>{
+        articles= result.articles;
+        for( let i=0; i<articles.length; i++){
+            let div= document.createElement('div');
+            div.innerHTML=`<div class="ui card">
+            <h3 class="header">${articles[i].title}</h3>
+            <p><em>${articles[i].author}</em></p>
+            <a class="image" href="#">
+    <img src="${articles[i].urlToImage}">
+  </a>
+  <p class="description">
+            ${articles[i].description}
+            <a href="${articles[i].url}"></a></p>
+
+          </div>
+          <div class="meta"><small></small></div>
+           
+
+            `;
+            card.appendChild(div);
+        }
+        
+    })
+   
+})
+
+}
+

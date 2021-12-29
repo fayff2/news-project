@@ -37,24 +37,7 @@
   <div class="right menu">
     <div class="item"> <a href="">Subscribe</a></div>
     <div class="item"> <a href="">  Today </a> </div>
-    <div class="item">
-      <div class="ui action input">
-        <input type="text" placeholder="Search...">
-        <button class="ui button "> Search </button>
 
-        <div class="item"><a href="#">
-          <div class="ui dropdown">
-              <div class="text">country</div>
-              <i class="dropdown icon"></i>
-              <div class="menu black">
-                   <div class="item"><i class="sa flag"></i>Saudi Arabia</div>
-                  <div class="item"><i class="america flag"></i>America</div>
-                  <div class="item"><i class="france flag"></i>France</div>
-                  <div class="item"><i class="japan flag"></i>Japan</div>
-                 
-              </div>
-          </div>
-      </a></div>
         
       </div>
     </div>
@@ -74,15 +57,15 @@
 
   <div class="ui container" id="navbar">
 
-  <div class="btn-box">
+  <div class="btn-box" id="nav-btn">
 
-    <button> <a href="#">All</a></button>
-    <button > <a href="#"> General </a> </button>
-    <button > <a href="#">Business</a> </button>
-    <button > <a href="#">Technology </a> </button>
-    <button > <a href="#">Entertainment</a> </button>
-    <button > <a href="#">Health </a> </button>
-    <button > <a href="#">Science </a> </button>
+    <button> <a href="#" id="all">All</a></button>
+    <button > <a href="#" id="General"> General </a> </button>
+    <button > <a href="#" id="Business">Business</a> </button>
+    <button > <a href="#" id="Technolog">Technology </a> </button>
+    <button > <a href="#" id="Entertainment">Entertainment</a> </button>
+    <button > <a href="#" id="Health">Health </a> </button>
+    <button > <a href="#" id="Science">Science </a> </button>
 
   </div>
   
@@ -92,7 +75,7 @@
 
 
 <!------------landing start ----------->
-
+<!---
 <div class="carousel-contianer">
    <div class="slider">
      <div class="slides">
@@ -130,24 +113,34 @@
      </div>
    </div>  
    
-  </div>
+  </div>-->
 
 
-<!-------------newsapi---------------->
-
-
-<!--<div class="newsapi">
-<form  class="search">
-  <label>News</label><br>
-  <input class="input" type="text" /><br>
-  <input type="submit"/>
-</form>
-<div class="news-container">
-  <ul class="class-list">
-    
-  </ul>
+    <div class="row">
+      <div class="four column">
+        <div class="ui card">
+            <div class="content">
+              <h3 class="text-info">Search by country</h3> 
+             
+              <select name="country"  id="country"  class="ui search dropdown">
+                  <option value="sa">Saudi Arabia</option>
+                  <option value="us">America</option>
+                  <option value="fr">France</option>
+                  <option value="ae">Emirates</option>
+              </select>
+            </div>
+        </div>
 </div>
-</div>-->
+      <div class="eight column">
+          <div class="ui card" id="article">
+          
+          </div>
+      </div>
+    
+</div>
+
+
+
 
 
 
